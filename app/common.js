@@ -2,6 +2,10 @@ require.config({
 	baseUrl:"lib/js",
 	paths:{
 		text:"text",
-		zepto:"zepto.min"
+		zepto:"zepto.min",
+		app:'../app/',
+		tmpl:'../../template/',
+		cssloader:'css.min',
+		css:'../../app/css/'
 	}
 })

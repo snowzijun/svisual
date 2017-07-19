@@ -1,5 +1,5 @@
 require(['app/common.js'],function(){
-	require(['zepto'],function($){
+	require(['zepto','cssloader!css/index'],function($){
 		alert(1);
 	})
 })
