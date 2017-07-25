@@ -1,5 +1,5 @@
 require(['app/common.js'],function(){
-	require(['zepto','cssloader!css/index'],function($){
+	require(['zepto','cssloader!css/usercenter'],function($){
 		var initEvent = function(){
 			mui(".footer-center").on("tap","#msg-sound",function(event){
 				if (window.plus) {
@@ -21,13 +21,7 @@ require(['app/common.js'],function(){
 			mui(".footer-center").on("hold","#msg-sound",function(event){
 				console.log("a");
 			});
-			//个人中心
-			mui("body").on("tap",".user-center",function(event){
-				mui.openWindow({
-    				url: 'usercenter.html', 
-    				id:'usercenter'
-  				});
-			});
+			
 		}
 		
 		var init = function(){
