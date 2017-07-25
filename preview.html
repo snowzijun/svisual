@@ -6,23 +6,31 @@
     <title></title>
     <script src="lib/js/mui.min.js"></script>
     <link href="lib/css/mui.min.css" rel="stylesheet"/>
-    <script data-main="app/js/usercenter.js" src="lib/js/require.js" type="text/javascript" charset="utf-8"></script>
+    <script data-main="app/js/preview.js" src="lib/js/require.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
       	mui.init({
       		gestureConfig:{
       			longtap:true,
       			hold:true
-      		}
+      		},
+      		subpages:[{
+      			url:'echarts-list.html',
+     			id:'echarts-list',
+      			styles:{
+        			top:'45px',//mui标题栏默认高度为45px；
+        			bottom:'45px'//默认为0px，可不定义；
+      			}
+   			}]
       	});
     </script>
 </head>
 <body>
 	<header class="mui-bar mui-bar-nav">
 			<a class="mui-action-back mui-icon mui-icon-left-nav"></a>
-			<h1 class="mui-title">个人中心</h1>
+			<h1 class="mui-title">查看数据</h1>
 		</header>
 		<div class="mui-content">
-			<div class="a"></div>
+			
 		</div>
 		<footer>
 			<div class="footer-center">

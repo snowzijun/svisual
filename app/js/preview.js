@@ -1,5 +1,5 @@
 require(['app/common.js'],function(){
-	require(['zepto','cssloader!css/usercenter'],function($){
+	require(['zepto','cssloader!css/preview'],function($){
 		var initEvent = function(){
 			mui(".footer-center").on("tap","#msg-sound",function(event){
 				if (window.plus) {
@@ -20,13 +20,6 @@ require(['app/common.js'],function(){
 			});
 			mui(".footer-center").on("hold","#msg-sound",function(event){
 				console.log("a");
-			});
-			
-			mui(".mui-content").on("tap",".a",function(event){
-				mui.openWindow({
-    				url: 'preview.html', 
-    				id:'preview'
-  				});
 			});
 			
 		}
