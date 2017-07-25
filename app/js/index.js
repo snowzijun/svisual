@@ -18,6 +18,9 @@ require(['app/common.js'],function(){
 				}
 				event.preventDefault();
 			});
+			mui(".footer-center").on("hold","#msg-sound",function(event){
+				console.log("a");
+			});
 		}
 		
 		var init = function(){
