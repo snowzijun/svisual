@@ -189,5 +189,65 @@
 				}
 			}
 		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"app/common.js",
+					"lib/js/zepto.min.js",
+					"lib/js/require.js",
+					"lib/css/mui.min.css",
+					"lib/js/mui.min.js",
+					"lib/js/css.min.js",
+					"lib/fonts/mui.ttf",
+					"app/css//index.css",
+					"app/js/index.js"
+				],
+				"refer": [
+					"usercenter.html"
+				],
+				"priority": 0
+			},
+			"usercenter.html": {
+				"resources": [
+					"app/js/usercenter.js",
+					"app/css//usercenter.css",
+					"app/common.js",
+					"lib/js/zepto.min.js",
+					"lib/js/require.js",
+					"lib/css/mui.min.css",
+					"lib/js/mui.min.js",
+					"lib/js/css.min.js",
+					"lib/fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"app/template/demo.tpl",
+				"lib/js/moment.min.js",
+				"preview.html",
+				"lib/js/text.js",
+				"lib/js/mock-min.js",
+				"lib/css/mui.css",
+				"app/js/echarts-list.js",
+				"lib/js/template.js",
+				"app/css/index.css",
+				"lib/js/r.js",
+				"app/css/usercenter.css",
+				"app/js/preview.js",
+				"echarts-list.html",
+				"lib/js/css.js",
+				"lib/js/echarts-all.js",
+				"lib/js/mui.js",
+				"app/css/preview.css",
+				"app/css/echarts-list.css",
+				"lib/js/mock.js",
+				"README.md"
+			]
+		}
 	}
 }
